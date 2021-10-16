@@ -28,3 +28,21 @@ plugins:
     arch: amd64
     url: https://github.com/up9inc/mizu/releases/download/${version}/mizu_darwin_amd64
     sha256: ""
+- name: k3d
+  version: v5.0.1
+  homepage: "https://github.com/rancher/k3d"
+  desc: "Little helper to run Rancher Lab's k3s in Docker"
+  bin: k3d
+  url:
+  - os: darwin
+    arch: amd64
+    url: https://github.com/rancher/k3d/releases/download/${version}/k3d-darwin-amd64
+    sha256: ""
+  - os: darwin
+    arch: arm64
+    url: https://github.com/rancher/k3d/releases/download/${version}/k3d-darwin-arm64
+    sha256: ""
+  - os: linux
+    arch: amd64
+    url: https://github.com/rancher/k3d/releases/download/${version}/k3d-linux-amd64
+    sha256: ""
