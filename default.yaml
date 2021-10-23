@@ -1,33 +1,5 @@
 version: 1.0
 plugins:
-- name: tgsend
-  version: v1.0.1
-  homepage: "https://github.com/mritd/tgsend"
-  desc: "一个 Telegram 推送的小工具，用于调用 Bot API 发送告警等"
-  bin: tgsend
-  url:
-  - os: linux
-    arch: amd64
-    url: https://github.com/mritd/tgsend/releases/download/${version}/tgsend_linux_amd64
-    sha256: ""
-  - os: darwin
-    arch: amd64
-    url: https://github.com/mritd/tgsend/releases/download/${version}/tgsend_darwin_amd64
-    sha256: ""
-- name: mizu
-  version: 0.16.0
-  homepage: "https://github.com/up9inc/mizu"
-  desc: "API traffic viewer for Kubernetes"
-  bin: mizu
-  url:
-  - os: linux
-    arch: amd64
-    url: https://github.com/up9inc/mizu/releases/download/${version}/mizu_linux_amd64
-    sha256: ""
-  - os: darwin
-    arch: amd64
-    url: https://github.com/up9inc/mizu/releases/download/${version}/mizu_darwin_amd64
-    sha256: ""
 - name: k3d
   version: v5.0.1
   homepage: "https://github.com/rancher/k3d"
@@ -45,4 +17,22 @@ plugins:
   - os: linux
     arch: amd64
     url: https://github.com/rancher/k3d/releases/download/${version}/k3d-linux-amd64
+    sha256: ""
+- name: brook
+  version: v20210701
+  homepage: "https://github.com/txthinking/brook"
+  desc: "跨平台的强加密无特征的无配置的代理软件"
+  bin: brook
+  url:
+  - os: darwin
+    arch: amd64
+    url: https://github.com/txthinking/brook/releases/download/${version}/brook_darwin_amd64
+    sha256: ""
+  - os: darwin
+    arch: arm64
+    url: https://github.com/txthinking/brook/releases/download/${version}/brook_darwin_arm64
+    sha256: ""
+  - os: linux
+    arch: amd64
+    url: https://github.com/txthinking/brook/releases/download/${version}/brook_linux_amd64
     sha256: ""
