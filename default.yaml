@@ -1,4 +1,4 @@
-version: 1.0
+version: 1.1
 plugins:
 - name: helm
   version: v3.7.1
@@ -9,7 +9,7 @@ plugins:
   url:
   - os: linux
     arch: amd64
-    url: https://github.com/helm/helm/releases/download/${version}/helm-${version}-linux-amd64.tar.gz
+    url: https://get.helm.sh/helm-${version}-linux-amd64.tar.gz
     sha256: ""
 - name: k3d
   version: v5.0.3
