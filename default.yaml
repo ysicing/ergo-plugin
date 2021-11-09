@@ -1,7 +1,18 @@
 version: 1.0
 plugins:
+- name: helm
+  version: v3.7.1
+  homepage: "https://helm.sh"
+  desc: "The Kubernetes Package Manager"
+  bin: helm
+  symlink: true
+  url:
+  - os: linux
+    arch: amd64
+    url: https://github.com/helm/helm/releases/download/${version}/helm-${version}-linux-amd64.tar.gz
+    sha256: ""
 - name: k3d
-  version: v5.0.1
+  version: v5.0.3
   homepage: "https://github.com/rancher/k3d"
   desc: "Little helper to run Rancher Lab's k3s in Docker"
   bin: k3d
